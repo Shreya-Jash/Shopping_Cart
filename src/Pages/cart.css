@@ -1,0 +1,9 @@
+.cart-header{
+    background-color: rgb(6, 75, 114);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    height: 40px;
+    margin: 10px 40px;
+}

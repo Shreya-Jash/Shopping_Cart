@@ -1,0 +1,38 @@
+.item-list{
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color:rgba(21, 130, 114, 0.815);
+    border: 1.5px solid wheat;
+    padding-top: 20px;
+}
+
+.item-container{
+   width: 300px;
+   height: 400px;
+   padding: 10px;
+  overflow: hidden;
+  margin: 40px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: blanchedalmond;
+}
+
+.item-img{
+    width: 100%;
+    max-width: 300px;
+    min-height: 200px;
+    display: block;
+    object-fit: cover;
+}
+
+.item-description{
+    margin-top: 10px;
+    padding-bottom: 6px;
+}
+
+.item-toolname{
+   
+}

@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(21, 130, 114);
+    overflow: hidden;
+    box-shadow: 2px 2px rgb(86, 72, 72);
+}
+
+.shop-name{
+    display: flex;
+    padding-left: 20px;
+    font-size: 14px;
+}
+span{
+    color: rgb(212, 188, 151);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.shop-logo{
+    display: flex;
+    align-items: baseline;
+    text-shadow: 1px 1px black;
+}
+nav p{
+    padding-right: 10px;
+    color: rgb(255, 255, 255);
+}
+
+ul{
+    display: flex;
+    list-style: none;
+
+}
+
+nav a{
+    text-decoration: none;
+    padding-right: 20px;
+    color: wheat;
+}
+
+@media screen and (max-width:780px) {
+    nav a{
+        padding-right: 10px;
+    }
+    .shop-name{
+        font-size: 10px;
+        padding-left: 10px;
+    }
+    span{
+        font-size: 16px;
+    }
+}
