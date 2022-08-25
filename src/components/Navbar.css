@@ -13,6 +13,8 @@ nav{
     background-color: rgb(21, 130, 114);
     overflow: hidden;
     box-shadow: 2px 2px rgb(86, 72, 72);
+    position: sticky;
+    top: 0;
 }
 
 .shop-name{
@@ -40,6 +42,17 @@ ul{
     display: flex;
     list-style: none;
 
+}
+
+.cart span{
+    padding: 0 3px;
+    background-color: red;
+    color: aliceblue;
+    font-weight: bolx;
+    border-radius: 5px;
+    position: relative;
+    top: -13px;
+    left: -4px;
 }
 
 nav a{

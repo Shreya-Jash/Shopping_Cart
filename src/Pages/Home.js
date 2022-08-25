@@ -1,23 +1,21 @@
-import React from 'react'
+import React, { useState }  from 'react'
 import Products from '../components/Products'
-
 import Data from '../components/Data'
 import "../components/Product.css"
 
-export default function Home() {
-  const products = Data.map(item =>
-    {
-      return (
-        <Products 
-          key={item.id}
-          item={item}
-        />
-      )
-    })
+export default function Home({handleClick}) {
+
+  
   return (
     <div>
       <section className='item-list'>
-        {products}
+      {Data.map((item) =>(
+          <Products 
+              key={item.id}
+              item={item}
+              handleClick={handleClick}
+            />
+      ))}
       </section>
     </div>
 

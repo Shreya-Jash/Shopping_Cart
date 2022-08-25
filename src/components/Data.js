@@ -1,4 +1,4 @@
-export default [
+ const list= [
     {
         id: 1,
         img: "screw.jpg",
@@ -40,3 +40,5 @@ export default [
 
     }
 ]
+
+export default list;

@@ -7,3 +7,63 @@
     height: 40px;
     margin: 10px 40px;
 }
+
+.cart-container{
+    display: flex;
+    justify-content: center;
+}
+
+.cart-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border: 1px solid black;
+    width: 600px;
+    margin-bottom: 4px;
+}
+
+.cart-img{
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.cart-operation{
+    display: flex;
+    border: 1px solid grey;
+}
+
+
+.decrement{
+    width: 18px;
+    color: blue;
+    border: none;
+}
+
+.increment{
+    width: 18px;
+    border: none;
+    color: blue;
+}
+
+.cart-displaybox{
+    width: 30px;
+    text-align: center;
+    background-color: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+}
+
+.remove{
+    margin-right: 5px;
+}
+
+.remove:hover{
+    background-color: red;
+    color: azure;
+    border-color: red;
+}
