@@ -15,7 +15,7 @@ function Cart({cart,setCart,handleChange}) {
   function handlePrice()
   {
     let ans =0
-    cart.map((item) => (ans+= item.amount * item.price))
+    cart.map((item) => (ans += item.amount * item.price))
     setPrice(ans);
   }
 
@@ -36,7 +36,7 @@ function Cart({cart,setCart,handleChange}) {
           <p className='cart-price'>₹ {item.price}</p>
           <div className='cart-operation'>
             <button className='decrement' onClick={() => handleChange(item, -1)}>-</button>
-            <button className='cart-displaybox' type='number'>{item.amount}</button>
+            <button className='cart-displaybox'>{item.amount}</button>
             <button className='increment' onClick={() => handleChange(item,1)}>+</button>
           </div>
 

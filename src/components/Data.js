@@ -5,7 +5,7 @@
         tool_name: "Screw",
         price: 870,
         quantity: 1,
-
+        amount:1
     },
     {
         id: 1,
@@ -13,7 +13,7 @@
         tool_name: "Godrej Lock",
         price: 870,
         quantity: 1,
-
+        amount:1
     },
     {
         id: 1,
@@ -21,7 +21,7 @@
         tool_name: "Door lock set",
         price: 870,
         quantity: 1,
-
+        amount:1
     },
     {
         id: 1,
@@ -29,7 +29,7 @@
         tool_name: "Tower bolt",
         price: 870,
         quantity: 1,
-
+        amount:1
     },
     {
         id: 1,
@@ -37,7 +37,7 @@
         tool_name: "Cabinet pull handel",
         price: 870,
         quantity: "10 piece",
-
+        amount:1
     }
 ]
 
