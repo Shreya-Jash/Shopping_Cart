@@ -46,7 +46,7 @@ function Cart({cart,setCart,handleChange}) {
           </div>
           
       ))}
-      <div>Total Price- ₹{price}</div>
+      <div className='total_price'>Total Price- ₹{price}</div>
       
     </div>
   )
