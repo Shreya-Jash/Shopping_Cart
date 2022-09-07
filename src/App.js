@@ -7,6 +7,7 @@ import Home from './Pages/Home'
 import Cart from './Pages/Cart'
 import SignUp from './Pages/SignUp'
 import Products from './components/Products'
+import Register from './Pages/Register'
 
 import Data from './components/Data'
 
@@ -40,6 +41,9 @@ export default function App() {
         </Routes>
         <Routes>
           <Route path='/SignUp' element={<SignUp />}/>
+        </Routes>
+        <Routes>
+          <Route path='/Register' element={<Register />}/>
         </Routes>
       </Router>
     </div>
