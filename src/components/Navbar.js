@@ -25,7 +25,7 @@ export default function Navbar({size}) {
                     <NavLink to="/Cart" className='cart'><BsFillCartFill /><span>{size}</span></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/SignUp" className='signUp'>Sign Up</NavLink>
+                    <NavLink to="/SignUp" className='signUp'>Login/Register</NavLink>
                 </li>
             </ul>
         </div>

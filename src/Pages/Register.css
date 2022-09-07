@@ -1,0 +1,40 @@
+.register{
+    background-color:rgb(19, 108, 89);
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+    padding-top:40px;
+}
+
+.register_header{
+    color: bisque;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.register_form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.register_input{
+    background-color: rgba(255, 255, 255, 0.864);
+    margin: 4px 0px 0px 10px;
+    border-radius: 20px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+}
+
+.register_button{
+    width: 80px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 16px;
+}
