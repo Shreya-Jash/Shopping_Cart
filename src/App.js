@@ -14,10 +14,13 @@ import Data from './components/Data'
 export default function App() {
   const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
+  const [buttonText, setButtonText] = useState('Add Item');
+
 
   const handleClick = (item) => {
     if (cart.indexOf(item) !== -1) return;
     setCart([...cart, item]);
+    setButtonText('Item added');
   };
 
   const handleChange = (item, d) => {

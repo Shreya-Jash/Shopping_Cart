@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import Data from "./Data";
 
 
@@ -8,7 +8,15 @@ export default function Products({item ,handleClick}) {
     tool_name,
     price,
     quantity}=item
+    const [buttonText, setButtonText] = useState('Add Item');
+    function textChange()
+    {
+      setButtonText('Item added')
+    }
   return (
+    
+
+
     <div className="item-container">
       <img className="item-img"
           src={`../Images/${item.img}`} 
@@ -18,7 +26,7 @@ export default function Products({item ,handleClick}) {
       <p className="item-price">Price- ₹ {item.price}</p>
       <p className="item-quantity">Quantity per pack-{item.quantity}</p>
       </div>
-      <button className="button" onClick={() => handleClick(item)} >Add to cart</button>
+      <button className="button" onClick={() =>{ handleClick(item);textChange()}}>{buttonText}</button>
     </div>
   )
 }
