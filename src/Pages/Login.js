@@ -1,9 +1,8 @@
 import React,{useState} from 'react'
-import "../Pages/signUp.css"
-import Register from "../Pages/Register"
-import {BrowserRouter as Router, Routes ,Route, NavLink } from 'react-router-dom'
+import "../Pages/login.css"
+import { NavLink } from 'react-router-dom'
 
-function SignUp() {
+function Login() {
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
 
@@ -16,6 +15,8 @@ function SignUp() {
 
     setAllEntry([...allEntry,newEntry])
   }
+
+  
   
   return (
     <div>
@@ -41,4 +42,4 @@ function SignUp() {
   )
 }
 
-export default SignUp
+export default Login

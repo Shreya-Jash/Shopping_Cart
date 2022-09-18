@@ -18,6 +18,13 @@
   border: 1px solid black;
   border-radius: 5px;
   background-color: blanchedalmond;
+  transition: transform .3s; 
+}
+.item-container:hover
+{
+    -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
 }
 
 .item-img{
@@ -33,6 +40,3 @@
     padding-bottom: 6px;
 }
 
-.item-toolname{
-   
-}
