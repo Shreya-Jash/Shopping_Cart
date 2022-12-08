@@ -1,7 +1,7 @@
 import React from 'react'
 import Products from '../components/Products'
 import Data from '../components/Data'
-import "../components/Product.css"
+import "../styles/Product.css"
 
 export default function Home({handleClick}) {
 

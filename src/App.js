@@ -31,15 +31,9 @@ export default function App() {
         <Navbar  size={cart.length}/>
         <Routes>
           <Route exact path='/' element={<Home handleClick={handleClick}/>}/>
-        </Routes>
-        <Routes>
-          <Route path='/Cart' element={<Cart cart={cart} setCart={setCart} handleChange={handleChange}/>}/>
-        </Routes>
-        <Routes>
-          <Route path='/Login' element={<Login />}/>
-        </Routes>
-        <Routes>
-          <Route path='/Register' element={<Register />}/>
+            <Route path='/Cart' element={<Cart cart={cart} setCart={setCart} handleChange={handleChange} />}/>
+            <Route path='/Login' element={<Login />}/>
+            <Route path='/Register' element={<Register />}/>
         </Routes>
       </Router>
     </div>

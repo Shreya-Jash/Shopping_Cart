@@ -1,5 +1,5 @@
 import React,{useState ,useEffect} from 'react'
-import "../Pages/cart.css"
+import "../styles/cart.css"
 import {AiFillDelete} from "react-icons/ai"
 
 function Cart({cart,setCart,handleChange}) {

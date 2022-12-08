@@ -1,5 +1,5 @@
 import React from 'react'
-import "../components/Navbar.css"
+import "../styles/Navbar.css"
 import {BsFillCartFill} from "react-icons/bs"
 import { NavLink } from 'react-router-dom'
 
