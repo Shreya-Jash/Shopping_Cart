@@ -8,7 +8,7 @@ function Register() {
     email:"",
     phoneNumber:"",
     password:"",
-    cpassword:""
+    cpassword:" "
   })
 
   function handleChange(e)
