@@ -2,7 +2,6 @@ import React,{useState} from "react";
 
 
 export default function Products({item ,handleClick}) {
-
     
   return (
     <div className="item-container">
@@ -14,7 +13,10 @@ export default function Products({item ,handleClick}) {
       <p className="item-price">Price- ₹ {item.price}</p>
       <p className="item-quantity">Quantity per pack-{item.quantity}</p>
       </div>
-      <button className="productButton" onClick={() =>{ handleClick(item)}}>Add Item</button>
+      <button className="productButton" onClick={() =>{ handleClick(item)}}>
+        {console.log(handleClick)}
+        Add item
+      </button>
     </div>
   )
 }
