@@ -1,12 +1,14 @@
-import React, {useState } from 'react'
-import Navbar from './components/Navbar'
-import {BrowserRouter as Router, Routes ,Route } from 'react-router-dom'
+import React, { useState } from "react";
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Page import
-import Home from './Pages/Home'
-import Cart from './Pages/Cart'
-import Login from './Pages/Login'
-import Register from './Pages/Register'
+import Home from "./Pages/Home";
+import Cart from "./Pages/Cart";
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
+import { UserAuthContextProvider } from "./context/UserAuthContext";
+import ProtectedRoute from "./components/ProtectedRoute"
 
 export default function App() {
   const [cart, setCart] = useState([]);
@@ -27,15 +29,27 @@ export default function App() {
 
   return (
     <div>
-      <Router>
-        <Navbar  size={cart.length}/>
+      <UserAuthContextProvider>
+        <Navbar size={cart.length} />
+
         <Routes>
-          <Route exact path='/' element={<Home handleClick={handleClick}/>}/>
-            <Route path='/Cart' element={<Cart cart={cart} setCart={setCart} handleChange={handleChange} />}/>
-            <Route path='/Login' element={<Login />}/>
-            <Route path='/Register' element={<Register />}/>
+          <Route exact path="/" element={<Home handleClick={handleClick} />} />
+          <Route
+            path="/Cart"
+            element={
+              <ProtectedRoute>
+                <Cart
+                  cart={cart}
+                  setCart={setCart}
+                  handleChange={handleChange}
+                />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Register" element={<Register />} />
         </Routes>
-      </Router>
+      </UserAuthContextProvider>
     </div>
-  )
+  );
 }
