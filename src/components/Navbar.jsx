@@ -15,7 +15,7 @@ export default function Navbar({ size }) {
   };
 
   return (
-    <nav>
+    <nav className="flex justify-between text-center">
       <div className="shop-name">
         <NavLink to="/" className="shop-logo">
           <p>
@@ -30,21 +30,21 @@ export default function Navbar({ size }) {
         </NavLink>
       </div>
       <div className="nav-container">
-        <ul>
-          <li>
+        <ul >
+          <li className="mt-4">
             <NavLink to="/Cart" className="cart">
-              <BsFillCartFill />
+              <BsFillCartFill  />
               <span>{size}</span>
             </NavLink>
           </li>
-          <li>
+          <li className="mt-2">
             {user ? (
               <li>
-                <button onClick={handleLogOut}>Logout</button>
+                <button onClick={handleLogOut} className="text-[bisque] pr-4 text-lg">Logout</button>
               </li>
             ) : (
               <li>
-                <NavLink to="/Login" className="signUp">
+                <NavLink to="/Login" className="signUp text-[bisque] pr-4 text-lg">
                   Login/Register
                 </NavLink>
               </li>

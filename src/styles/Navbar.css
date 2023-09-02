@@ -6,8 +6,6 @@
 }
 
 nav{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 60px;
     background-color: rgb(21, 130, 114);
@@ -47,12 +45,13 @@ ul{
 
 .cart span{
     padding: 0 3px;
+    font-size: small;
     background-color: red;
     color: aliceblue;
-    font-weight: bolx;
+    font-weight: bold;
     border-radius: 5px;
     position: relative;
-    top: -13px;
+    top: -30px;
     left: -4px;
 }
 
