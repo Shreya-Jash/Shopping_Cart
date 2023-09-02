@@ -75,7 +75,7 @@ function Login() {
             <GoogleButton onClick={handleGoogleSignIn} />
           </div>
 
-          <p className="text-center pt-5 text-[bisque]">
+          <p className="text-center text-lg pt-5 text-[bisque]">
             Don't have account?{" "}
             <NavLink to="/Register" className="text-[#f7b769]">
               Register Now
