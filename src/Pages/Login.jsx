@@ -5,10 +5,11 @@ import GoogleButton from "react-google-button";
 import { useUserAuth } from "../context/UserAuthContext";
 
 function Login() {
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
-  const { logIn } = useUserAuth();
-  const [error, setError] = useState();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const { logIn, googleSignIn } = useUserAuth();
   const navigate = useNavigate();
 
   const handleSubmit =async(e)=>{
@@ -16,12 +17,21 @@ function Login() {
     setError("");
     try {
       await logIn(email,password);
-      navigate("/Home")
+      navigate("/")
     } catch (err) {
       setError(err.message);
     }
   }
 
+  const handleGoogleSignIn= async(e) => {
+    e.preventDefault();
+    try {
+      await googleSignIn();
+      navigate('/')
+    } catch (err) {
+      setError(err.message);
+    }
+  }
   // const [user,setUser]=useState({
   //   email:"",
   //   password:""
@@ -65,7 +75,7 @@ function Login() {
 
         <button className="login_button">Login</button>
         <div>
-          <GoogleButton />
+          <GoogleButton onClick={handleGoogleSignIn}/>
         </div>
 
         <p>Don't have account?</p>
