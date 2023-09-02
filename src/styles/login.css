@@ -1,11 +1,6 @@
-.login_page{
-    width: 400px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
+.login{
+    height: 450px;
     background-color: rgb(19, 108, 89);
-    overflow: hidden;
-    position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
@@ -15,25 +10,20 @@
 
 .login_text{
     margin-top: 10px;
-    margin-left: 10px;
     color: bisque;
     font-size: larger;
 }
 
 .login_input{
-    margin: 4px 10px 0px 10px;
+    margin: 4px 10px 0px 0px;
     border-radius: 10px;
     height: 30px;
     padding-left: 5px;
 }
 
 .login_button{
-    width: 60px;
-    height: 25px;
-    font-size: 16px;
     border-radius: 16px;
     margin-top: 10px;
-    margin-left: 20px;
     background-color: bisque;
     border: none;
 }
